@@ -1,0 +1,1 @@
+# optimization-the-cross-sectional-geometry-of-a-doubly-clamped-beam-

@@ -1,4 +1,4 @@
-# optimization-the-cross-sectional-geometry-of-a-doubly-clamped-beam-
+# Optimization the cross-sectional geometry of a doubly clamped beam
 Consider the doubly clamped beam with distributed load. The cross section is constructed with two parabolic curves in the form b(y) that depend on b_t, b_w,h. Distributed load has a parabolic shape p(x) that depend on the p_max, p_min and L. The Young's modulus of the material is E, the yiels stress is sigma_y and the deflection is u(x). 
 
 **Task 1. Derivation the area A(y), the first moment of area Q(y) and the second moment of area I(y)**
@@ -18,7 +18,7 @@ Substitute these conditions to parabolic equation we can obtain that:
 
 The same consideration should be made for the second moment of inertia. We need to multiply our integral by 2, because our cross-sectional area is symmetric through the axis y.
 
-Task 2. Governing ODE equation 
+**Task 2. Governing ODE equation**
 
 The governing equation for the beam is 
 
@@ -31,5 +31,5 @@ If x=L then p=p_min
 Substitute these conditions to parabolic equation we can obtain that:
  a=(-4(p_max-p_min ))/L^2 ,  b=4(p_max-p_min )/L,c=p_min
  
- Task 3.
+**Task 3.**
 

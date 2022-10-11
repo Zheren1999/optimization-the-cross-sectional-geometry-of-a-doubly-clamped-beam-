@@ -1,11 +1,11 @@
 # Optimization the cross-sectional geometry of a double - clamped beam
-Consider the double-clamped beam with a distributed load. The cross section is constructed with two parabolic curves in the form ***b(y)*** that depend on ***b<sub>t</sub>, b<sub>w</sub>*** and ***h***. Distributed load has a parabolic shape ***p(x)*** that depend on the ***p<sub>max</sub>, p<sub>min</sub> and L***. The Young's modulus of the material is ***E***, the yiels stress is ***σ<sub>y</sub>*** and the deflection is ***u(x)***. 
+Consider the double-clamped beam with a distributed load. The cross section is constructed with two parabolic curves in the form ***b(y)*** that depend on ***b<sub>t</sub>, b<sub>w</sub>*** and ***h***. Distributed load has a parabolic shape ***p(x)*** that depend on the ***p<sub>max</sub>, p<sub>min</sub>*** and ***L***. The Young's modulus of the material is ***E***, the yiels stress is ***σ<sub>y</sub>*** and the deflection is ***u(x)***. 
 
 ![image](https://user-images.githubusercontent.com/89813720/194971716-1ac941a8-9e12-453e-9e7c-619f41197742.png)
 
 # Task 1. Derivation the area ***A(y)***, the first moment of area ***Q(y)*** and the second moment of area ***I(y)***
 
-As we can see our cross-sectional area is symmetric. It means that we can integrate ***A(y)*** from ***0*** to ***h/2*** but need to multiply by 2.
+As we can see our cross-sectional area is symmetric. It means that we can integrate ***A(y)*** from ***0*** to ***h/2*** but need to multiply by ***2***.
 
 ![image](https://user-images.githubusercontent.com/89813720/194971819-2f12612c-085d-469c-8e03-49d12bf49d15.png)
 
@@ -62,7 +62,7 @@ We can substitute derivatives of displacement in our equation and can obtain mom
 
 The first optimization criteria mean that we want to construct and design a minimum-mass simply supported beam. This is important from economic point of view. The mass is proportional to the cross-sectional area because length and density are fixed in our case. ***m=ρV=ρAL***. 
 
-The second optimization criteria mean there is a stress constraint. By varying the ***b<sub>w</sub>***  and h in the beam we don’t want to exceed a maximum stress constraint (***σ<sub>y</sub>***). But in this case, we have shear and normal stresses, that’s why we want to minimize Von-Mises stress (combination of σ<sub>xx</sub> and σ<sub>xy</sub>). Otherwise, we will face the problem of beam destruction. 
+The second optimization criteria mean there is a stress constraint. By varying the ***b<sub>w</sub>***  and ***h*** in the beam we don’t want to exceed a maximum stress constraint (***σ<sub>y</sub>***). But in this case, we have shear and normal stresses, that’s why we want to minimize Von-Mises stress (combination of ***σ<sub>xx</sub>*** and ***σ<sub>xy</sub>***). Otherwise, we will face the problem of beam destruction. 
 
 Third optimization criteria mean there is a deflection constraint. This is one of the important limitations. In real design, it is very important to minimize the maximum deflection with a certain value. Otherwise, we can run into the problem of the destruction of the structure. 
 
@@ -71,10 +71,10 @@ The fifth and sixth optimization criteria mean that in the construction of beam 
 # Task 7. Substitution the constants in the above equation
 
 It is obvious from the symmetry of the problem since the distributed load is symmetrical the maximum deflection will be in the middle of the beam i.e. ***x=L/2***.
-To find the maximum stress we can consider 4 points. 
-To find the maximum stress in fact we need to understand where the Von-Mises stress is maximum. The greater contribution in Von-Mises stress is made by the normal stress, because: σ<sub>vm</sub><sup>2</sup>=σ<sub>xx</sub><sup>2</sup>+3σ<sub>xy</sub><sup>max</sup>. Therefore we can simplify our problem in the form of considering a rectangular distribution load.
+To find the maximum stress we can consider four points. 
+To find the maximum stress in fact we need to understand where the Von-Mises stress is maximum. The greater contribution in Von-Mises stress is made by the normal stress, because: ***σ<sub>vm</sub><sup>2</sup>=σ<sub>xx</sub><sup>2</sup>+3σ<sub>xy</sub><sup>max</sup>***. Therefore we can simplify our problem in the form of considering a rectangular distribution load.
 Then the maximum moment is equal to: 
-***M_<sub>ends,max</sub>=(wL^<sup>2</sup>)/12***.  It is obvious that the maximum will be at point x=0 and x=L.
+***M_<sub>ends,max</sub>=(wL^<sup>2</sup>)/12***.  It is obvious that the maximum will be at point ***x=0*** and ***x=L***.
 At the same time y should be equal to ***–h/2***: ***y=-h/2*** to obtain the maximum normal stress, and then to obtain the maximum Von-Misses stress. 
 Substitute all the constants in the solution.
 

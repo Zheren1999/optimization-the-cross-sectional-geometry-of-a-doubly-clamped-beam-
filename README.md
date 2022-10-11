@@ -22,7 +22,7 @@ If ***y=h/2*** then ***x=b<sub>f</sub>***
 If ***y=-h/2*** then ***x=b<sub>f</sub>***
 
 Substitute these conditions to a parabolic equation, and we can obtain that:
- ***a=4(b<sub>f</sub>-b<sub>w</sub> )/h<sup>2</sup> ,  b=0,c=b<sub>w</sub>***
+ ***a=4(b<sub>f</sub> - b<sub>w</sub> )/h<sup>2</sup> ,  b=0, c=b<sub>w</sub>***
 
 The same consideration should be made for the second moment of inertia. We need to multiply our integral by ***2*** because our cross-sectional area is symmetric through the axis ***y***.
 
@@ -32,7 +32,7 @@ The governing equation for the beam is
 
 ![image](https://user-images.githubusercontent.com/89813720/195144101-d7c49f4a-02a9-4fb0-8fa5-43ee4604d873.png)
 
-Derivation of the parabolic shape of ***p(x)***. The main equation for parabola is p =ax^2+bx+c, where ***a,b,c*** are constants that need to be defined. Using ‘boundary’ conditions: 
+Derivation of the parabolic shape of ***p(x)***. The main equation for parabola is ***p =ax<sup>2</sup>+bx+c***, where ***a,b,c*** are constants that need to be defined. Using ‘boundary’ conditions: 
 
 If ***x=L/2*** then ***p=p<sub>max</sub>***
 
@@ -41,7 +41,7 @@ If ***x=0*** then ***p=p<sub>min</sub>***
 If ***x=L*** then ***p=p<sub>min</sub>***
 
 Substitute these conditions to a parabolic equation we can obtain that:
- ***a=(-4(p<sub>max</sub>-p<sub>min</sub>))/L<sup>2</sup>*** ,  ***b=4(p<sub>max</sub>-p<sub>min</sub>)/L, c=p<sub>min</sub>***
+ ***a=(-4(p<sub>max</sub> - p<sub>min</sub>))/L<sup>2</sup>*** ,  ***b=4(p<sub>max</sub> - p<sub>min</sub>)/L, c=p<sub>min</sub>***
  
 # Task 3. Derivation the general solution to the governing ODE
 
@@ -73,7 +73,7 @@ The second optimization criteria mean there is a stress constraint. By varying t
 
 Third optimization criteria mean there is a deflection constraint. This is one of the critical limitations. Minimizing the maximum deflection with a specific value in real design is very important. Otherwise, we can run into the problem of the destruction of the structure. 
 
-The fifth and sixth optimization criteria mean that in the construction of a beam (manufacture), there are dimension restrictions, that width or height shouldn’t be greater than the certain values that are used in production during manufacture. 
+The forth and fifth optimization criteria mean that in the construction of a beam (manufacture), there are dimension restrictions, that width or height shouldn’t be greater than the certain values that are used in production during manufacture. 
 
 # Task 7. Substitution of the constants in the above equation
 

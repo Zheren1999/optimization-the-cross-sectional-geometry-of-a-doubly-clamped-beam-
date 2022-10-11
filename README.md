@@ -28,7 +28,8 @@ The same consideration should be made for the second moment of inertia. We need 
 
 The governing equation for the beam is 
 
-EIy^''''-p(x)=0
+![image](https://user-images.githubusercontent.com/89813720/195144101-d7c49f4a-02a9-4fb0-8fa5-43ee4604d873.png)
+
 Derivation of the parabolic shape of ***p(x)***. The main equation for parabola is p =ax^2+bx+c, where ***a,b,c*** are constants that need to be defined. Using ‘boundary’ conditions: 
 
 If ***x=L/2*** then ***p=p<sub>max</sub>***
@@ -48,6 +49,8 @@ We solve the ODE in symbolic equation with corresponding constants ***C1, C2, C3
 
 For this case the beam has two fixed walls. It means that displacemnet on the ends equals to zero (fixed) and slope equals to zero. 
 
+![image](https://user-images.githubusercontent.com/89813720/195144321-4ba6a47b-2270-4411-b73c-c9883f971143.png)
+
 # Task 5. Calculate the integration constants
 
 We can substitute boundary conditions in our equation and can obtain the solution for displacement for simply supported beam. 
@@ -55,6 +58,8 @@ We can substitute boundary conditions in our equation and can obtain the solutio
 # Task 6. Derivation the moment, shear and square of the von mises stress 
 
 We use the following equations:
+
+![image](https://user-images.githubusercontent.com/89813720/195144391-bb4ad757-86e7-404c-be30-87b4bf3b2eca.png)
 
 We can substitute derivatives of displacement in our equation and can obtain moment, shear force and stresses.
 
@@ -70,6 +75,11 @@ The fifth and sixth optimization criteria mean that in the construction of beam 
 
 # Task 7. Substitution the constants in the above equation
 
+![image](https://user-images.githubusercontent.com/89813720/195144624-ea72ede0-6aa6-4a52-b621-37bcede906f6.png)
+
+![image](https://user-images.githubusercontent.com/89813720/195144710-1f49265a-ea32-426a-a828-2d3c1c124354.png)
+
+
 It is obvious from the symmetry of the problem since the distributed load is symmetrical the maximum deflection will be in the middle of the beam i.e. ***x=L/2***.
 To find the maximum stress we can consider four points. 
 To find the maximum stress in fact we need to understand where the Von-Mises stress is maximum. The greater contribution in Von-Mises stress is made by the normal stress, because: ***σ<sub>vm</sub><sup>2</sup>=σ<sub>xx</sub><sup>2</sup>+3σ<sub>xy,</sub><sub>max</sub>***. Therefore we can simplify our problem in the form of considering a rectangular distribution load.
@@ -82,19 +92,26 @@ Substitute all the constants in the solution.
 
 # Task 9. Generate the meshgrid of the tes pounts
 
+Meshgrided ***n<sup>2</sup>*** points and generated values for the mass, the displacement and the stress constraints. 
+
 # Task 10. Plot the optimization objective a filled cotour plot
 
 Plot the optimization objective a filled cotour plot
 
+![image](https://user-images.githubusercontent.com/89813720/195145078-8f5ac670-a1c1-48a8-aa9c-0e814fc42f35.png)
+
 In the figure, two yellow lines are visible which restrictions for ***b<sub>w</sub>*** and ***h*** are. 
-σ_vm^2 (0,h/2)-σ_y^2→PURPLE
-σ_vm^2 (L/2,-h/2)-σ_y^2→RED
-σ_vm^2 (0,0)-σ_y^2→BLUE
-σ_vm^2 (L/4,h/4)-σ_y^2→ORANGE 
+
+![image](https://user-images.githubusercontent.com/89813720/195145169-b22686e0-fc31-4243-8883-77ed3ad0c2f4.png)
+
+![image](https://user-images.githubusercontent.com/89813720/195145246-c705de54-c220-40f4-bd14-a13ba57be971.png)
+
 
 This figure shows an approximation for displacement isoline. Here I had to zoom the previous graph because displacement isoline is not visible.  Displacement isoline is out of bounds for h and bw.
-𝜎𝑣𝑚20,ℎ2−𝜎𝑦2→𝑃𝑈𝑅𝑃𝐿𝐸. At this point, we have the maximum moment. So in this case we will get the correct solution for an optimization problem. The red arrows show a feasible area. The area indicated by the orange arrow satisfies all the conditions and is in the feasible area. So we can choose optimizing dot. The rod dot will be optimized for this case because we are looking at the area to the right of the purple line, and the contour for the mass has the smallest value. [ℎ=0.23,𝑏𝑤=0.1]
 
+![image](https://user-images.githubusercontent.com/89813720/195145361-a1970e9a-8788-4bd0-81de-ab1bef15afd0.png)
 
+At this point, we have the maximum moment. So in this case we will get the correct solution for an optimization problem. The red arrows show a feasible area. The area indicated by the orange arrow satisfies all the conditions and is in the feasible area. So we can choose optimizing dot. The rod dot will be optimized for this case because we are looking at the area to the right of the purple line, and the contour for the mass has the smallest value. 
 
+[***h=0.23, b<sub>w</sub>=0.1***]
 

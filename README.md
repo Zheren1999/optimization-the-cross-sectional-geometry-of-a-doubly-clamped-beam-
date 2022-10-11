@@ -11,7 +11,7 @@ As we can see our cross-sectional area is symmetric. It means that we can integr
 
 Define ***b(y)***:
 We have parabolic shapes. The main equation for a parabola is
-***x =ay<sup>2</sup>+by+c***, where a,b,c are constants that need to be defined. Using ‘boundary’ conditions: 
+***x =ay<sup>2</sup>+by+c***, where ***a,b,c*** are constants that need to be defined. Using ‘boundary’ conditions: 
 
 If ***y=0*** then ***x=b<sub>w</sub>***
 
@@ -72,9 +72,9 @@ The fifth and sixth optimization criteria mean that in the construction of beam 
 
 It is obvious from the symmetry of the problem since the distributed load is symmetrical the maximum deflection will be in the middle of the beam i.e. ***x=L/2***.
 To find the maximum stress we can consider four points. 
-To find the maximum stress in fact we need to understand where the Von-Mises stress is maximum. The greater contribution in Von-Mises stress is made by the normal stress, because: ***σ<sub>vm</sub><sup>2</sup>=σ<sub>xx</sub><sup>2</sup>+3σ<sub>xy</sub><sup>max</sup>***. Therefore we can simplify our problem in the form of considering a rectangular distribution load.
+To find the maximum stress in fact we need to understand where the Von-Mises stress is maximum. The greater contribution in Von-Mises stress is made by the normal stress, because: ***σ<sub>vm</sub><sup>2</sup>=σ<sub>xx</sub><sup>2</sup>+3σ<sub>xy,</sub><sub>max</sub>***. Therefore we can simplify our problem in the form of considering a rectangular distribution load.
 Then the maximum moment is equal to: 
-***M_<sub>ends,max</sub>=(wL^<sup>2</sup>)/12***.  It is obvious that the maximum will be at point ***x=0*** and ***x=L***.
+***M<sub>ends,max</sub>=(wL<sup>2</sup>)/12***.  It is obvious that the maximum will be at point ***x=0*** and ***x=L***.
 At the same time y should be equal to ***–h/2***: ***y=-h/2*** to obtain the maximum normal stress, and then to obtain the maximum Von-Misses stress. 
 Substitute all the constants in the solution.
 

@@ -83,14 +83,25 @@ The fifth and sixth optimization criteria mean that in the construction of a bea
 
 
 It is evident from the symmetry of the problem that since the distributed load is symmetrical, the maximum deflection will be in the middle of the beam, i.e., ***x=L/2***.
-To find the maximum stress, we can consider four points. 
+To find the maximum stress, we can consider four points: 
+
+***(x,y)=(0, h/2)***
+
+***(x,y)=(L/2, -h/2)***
+
+***(x,y)=(0, 0)***
+
+***(x,y)=(L/4, h/4)***
+
 To find the maximum stress we need to understand where the Von-Mises stress is maximum. The greater contribution in Von-Mises stress is made by the normal stress, because: ***σ<sub>vm</sub><sup>2</sup>=σ<sub>xx</sub><sup>2</sup>+3σ<sub>xy,</sub><sub>max</sub>***. Therefore we can simplify our problem by considering a rectangular distribution load.
 Then the maximum moment is equal to: 
 ***M<sub>ends,max</sub>=(wL<sup>2</sup>)/12***.  The maximum will be at points ***x=0*** and ***x=L***.
 At the same time, ***y*** should be equal to ***–h/2***: ***y=-h/2*** to obtain the maximum normal stress and the maximum Von-Misses stress. 
 Substitute all the constants in the solution.
 
-# Task 8. Lambfify operation into Python function definition
+# Task 8. Lambdify operation into Python function definition
+
+Lambdified the expressions into Python function definitions. 
 
 # Task 9. Generate the mesh grid of the test points
 

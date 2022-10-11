@@ -44,11 +44,11 @@ Substitute these conditions to parabolic equation we can obtain that:
 
 We solve the ODE in symbolic equation with corresponding constants ***C1, C2, C3, C4***.
 
-# Task 4. State the boundary conditions**
+# Task 4. State the boundary conditions
 
 For this case the beam has two fixed walls. It means that displacemnet on the ends equals to zero (fixed) and slope equals to zero. 
 
-# Task 5. Calculate the integration constants**
+# Task 5. Calculate the integration constants
 
 We can substitute boundary conditions in our equation and can obtain the solution for displacement for simply supported beam. 
 
@@ -62,7 +62,7 @@ We can substitute derivatives of displacement in our equation and can obtain mom
 
 The first optimization criteria mean that we want to construct and design a minimum-mass simply supported beam. This is important from economic point of view. The mass is proportional to the cross-sectional area because length and density are fixed in our case. ***m=ρV=ρAL***. 
 
-The second optimization criteria mean there is a stress constraint. By varying the b<sub>w</sub>  and h in the beam we don’t want to exceed a maximum stress constraint (σ<sub>y</sub>). But in this case, we have shear and normal stresses, that’s why we want to minimize Von-Mises stress (combination of σ<sub>xx</sub> and σ<sub>xy</sub>). Otherwise, we will face the problem of beam destruction. 
+The second optimization criteria mean there is a stress constraint. By varying the ***b<sub>w</sub>***  and h in the beam we don’t want to exceed a maximum stress constraint (***σ<sub>y</sub>***). But in this case, we have shear and normal stresses, that’s why we want to minimize Von-Mises stress (combination of σ<sub>xx</sub> and σ<sub>xy</sub>). Otherwise, we will face the problem of beam destruction. 
 
 Third optimization criteria mean there is a deflection constraint. This is one of the important limitations. In real design, it is very important to minimize the maximum deflection with a certain value. Otherwise, we can run into the problem of the destruction of the structure. 
 
@@ -86,7 +86,7 @@ Substitute all the constants in the solution.
 
 Plot the optimization objective a filled cotour plot
 
-In the figure, two yellow lines are visible which restrictions for b_w and h are. 
+In the figure, two yellow lines are visible which restrictions for ***b<sub>w</sub>*** and ***h*** are. 
 σ_vm^2 (0,h/2)-σ_y^2→PURPLE
 σ_vm^2 (L/2,-h/2)-σ_y^2→RED
 σ_vm^2 (0,0)-σ_y^2→BLUE

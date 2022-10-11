@@ -1,4 +1,4 @@
-# Optimization the cross-sectional geometry of a doubly clamped beam
+# Optimization the cross-sectional geometry of a double - clamped beam
 Consider the doubly clamped beam with distributed load. The cross section is constructed with two parabolic curves in the form b(y) that depend on b_t, b_w,h. Distributed load has a parabolic shape p(x) that depend on the p_max, p_min and L. The Young's modulus of the material is E, the yiels stress is sigma_y and the deflection is u(x). 
 
 ![image](https://user-images.githubusercontent.com/89813720/194971716-1ac941a8-9e12-453e-9e7c-619f41197742.png)
@@ -35,19 +35,19 @@ If x=L then p=p_min
 Substitute these conditions to parabolic equation we can obtain that:
  a=(-4(p_max-p_min ))/L^2 ,  b=4(p_max-p_min )/L,c=p_min
  
-**Task 3. Derivation the general solution to the governing ODE**
+# Task 3. Derivation the general solution to the governing ODE
 
 We solve the ODE in symbolic equation with corresponding constants C2, C2, C3, C4
 
-**Task 4. State the boundary conditions**
+# Task 4. State the boundary conditions**
 
 For this case the beam has two fixed walls. It means that displacemnet on the ends equals to zero (fixed) and slope equals to zero. 
 
-**Task 5. Calculate the integration constants**
+# Task 5. Calculate the integration constants**
 
 We can substitute boundary conditions in our equation and can obtain the solution for displacement for simply supported beam. 
 
-**Task 6. Derivation the moment, shear and square of the von mises stress **
+# Task 6. Derivation the moment, shear and square of the von mises stress 
 
 We use the following equations:
 
@@ -60,7 +60,7 @@ The second optimization criteria mean there is a stress constraint. By varying t
 Third optimization criteria mean there is a deflection constraint. This is one of the important limitations. In real design, it is very important to minimize the maximum deflection with a certain value. Otherwise, we can run into the problem of the destruction of the structure. 
 The fifth and sixth optimization criteria mean that in the construction of beam (manufacture) there are dimension restrictions, that width or height shouldn’t be greater than the certain values that are used in production during manufacture.
 
-**Task 7. Substitution the constants in the above equation**
+# Task 7. Substitution the constants in the above equation
 
 It is obvious from the symmetry of the problem since the distributed load is symmetrical the maximum deflection will be in the middle of the beam i.e. x=L/2.
 To find the maximum stress we can consider 4 points. 
@@ -70,11 +70,11 @@ M_(ends max)=(wL^2)/12.  It is obvious that the maximum will be at point x=0 and
 At the same time y should be equal to –h/2 : y=-h/2 to obtain the maximum normal stress, and then to obtain the maximum Von-Misses stress. 
 Substitute all the constants in the solution.
 
-**Task 8. Lambfify operation into Python function definition**
+# Task 8. Lambfify operation into Python function definition
 
-**Task 9. Generate the meshgrid of the tes pounts**
+# Task 9. Generate the meshgrid of the tes pounts
 
-**Task 10. Plot the optimization objective a filled cotour plot**
+# Task 10. Plot the optimization objective a filled cotour plot
 
 Plot the optimization objective a filled cotour plot
 

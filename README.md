@@ -7,6 +7,8 @@ Consider the doubly clamped beam with distributed load. The cross section is con
 
 As we can see our cross-sectional area is symmetric. It means that we can integrate A(y) from 0 to h/2 but need to multiply by 2.
 
+![image](https://user-images.githubusercontent.com/89813720/194971819-2f12612c-085d-469c-8e03-49d12bf49d15.png)
+
 Define b(y):
 We have parabolic shapes. The main equation for a parabola is
 x =ay^2+by+c, where a,b,c are constants that need to be defined. Using ‘boundary’ conditions: 

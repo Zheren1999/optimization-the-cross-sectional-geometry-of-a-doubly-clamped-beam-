@@ -1,4 +1,4 @@
-# Optimization the cross-sectional geometry of a double - clamped beam
+# Optimization of the cross-sectional geometry of a double - clamped beam
 Consider the double-clamped beam with a distributed load. The cross-section is constructed with two parabolic curves in the form ***b(y)*** that depend on ***b<sub>t</sub>, b<sub>w</sub>*** and ***h***. Distributed load has a parabolic shape ***p(x)*** that depend on the ***p<sub>max</sub>, p<sub>min</sub>*** and ***L***. The Young's modulus of the material is ***E***, the yield stress is ***σ<sub>y</sub>***, and the deflection is ***u(x)***. 
 
 Our goal is to optimize the cross-sectional geometry of a double-clamped beam. We can consider ***10*** tasks to get the solution for this goal.  
